@@ -1,46 +1,71 @@
+@import 'compass';
 
 
-$break1: 300px;
-$break2: 450px;
-$break3: 700px;
-$break4: 1000px;
-$break5: 1250px;
-$break6: 1500px;
+// PHI Measurements
 
 $phi: 1.618;
-$phir: $phi - 1;
+$phi-ratio: $phi - 1;
 
-$ruler0: $phir * 100%;   // 61.8%
-$ruler1: $ruler0 * $phir; // 38.2%
-$ruler2: $ruler1 * $phir; // 23.6%
-$ruler3: $ruler2 * $phir; // 14.6%
-$ruler4: $ruler3 * $phir; // 9.0%
-$ruler5: $ruler4 * $phir; // 5.6%
-$ruler6: $ruler5 * $phir; // 3.4%
+$ruler0: $phi-ratio * 100%;   // 61.8%
+$ruler1: $ruler0 * $phi-ratio; // 38.2%
+$ruler2: $ruler1 * $phi-ratio; // 23.6%
+$ruler3: $ruler2 * $phi-ratio; // 14.6%
+$ruler4: $ruler3 * $phi-ratio; // 9.0%
+$ruler5: $ruler4 * $phi-ratio; // 5.6%
+$ruler6: $ruler5 * $phi-ratio; // 3.4%
+
+$ruler2-1: $ruler2 - $ruler5; // 18%
+$ruler2-2: $ruler2-1 * $phi-ratio; // 11.124%
+
+
+// 
+
+@mixin media($break) {
+  @if      $break == 0 { @media all and (min-width:200px ) { @content; } } // Smallest
+  @else if $break == 1 { @media all and (min-width:300px ) { @content; } } // +100px
+  @else if $break == 2 { @media all and (min-width:450px ) { @content; } } // +150px
+  @else if $break == 3 { @media all and (min-width:650px ) { @content; } } // +200px
+  @else if $break == 4 { @media all and (min-width:850px ) { @content; } } // +200px
+  @else if $break == 5 { @media all and (min-width:1050px) { @content; } } // +200px
+  @else if $break == 6 { @media all and (min-width:1250px) { @content; } } // +200px
+  @else if $break == 7 { @media all and (min-width:1450px) { @content; } } // +200px
+}
 
 
 body {
-  font-family: "chaparral-pro";
-  font-size: 1em;
-  @media all and (min-width:$break3) {
-    font-size: 1.1em;
-  }
 
+  font-family: sans-serif;
+  font-size: .8125em;
+  background-color: #fff3ee;
+  
+  @include media(0) { 
+    font-size: .9375em;
+    font-family: "chaparral-pro";
+  }
+  @include media(1) { font-size: 1.0em;  }
+  @include media(2) { font-size: 1.05em; }
+  @include media(3) { font-size: 1.15em; }
+  @include media(4) { font-size: 1.25em; }
+  @include media(5) { font-size: 1.3em;  }
+  @include media(6) { font-size: 1.35em; }
 }
 
 #main {
   padding:1em $ruler5 2em $ruler6;
   
-  @media all and (min-width:$break1) {
-    padding:1em $ruler4 2em $ruler5;
-  }
-  @media all and (min-width:$break3) {
-    padding:1em $ruler3 2em $ruler4;
-  }
-  @media all and (min-width:$break5) {
-    padding:1em $ruler2 2em $ruler3;
+  @include media(1) { padding:1em $ruler4 2em $ruler5; }
+  @include media(2) {  }
+  @include media(3) { padding:1em $ruler3 2em $ruler4; }
+  @include media(4) { padding:1em $ruler2-1 2em $ruler2-2; }
+  @include media(5) { padding:1em $ruler2 2em $ruler3; }
+  
+  .article {
+    
+    @include media(2) { @include text-shadow(0 1px #fff); }
+    @include media(7) { width:42em; }
   }
 }
+
 
 p.hanging {
   text-indent: -.3em;

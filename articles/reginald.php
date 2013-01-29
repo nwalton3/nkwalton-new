@@ -1,7 +1,7 @@
 <div class="article">
-<h1>Reginald</h1>
-<h3>By Saki</h3>
-<p><span class="leader">I did it--I who should have known better.</span> I persuaded Reginald to† go to* the McKillops' garden-*party against his will.</p>
+<h1><a href="#">Reginald</a></h1>
+<h3>By <a href="#">Saki</a></h3>
+<p><span class="leader">I did it--I who should have known better.</span> I persuaded Reginald to go to the McKillops' garden-party against his will.</p>
 <p>We all make mistakes occasionally.</p>
 <p>"They know you're here, and they'll think it so funny if you don't go. And I want particularly to be in with Mrs. McKillop just now."</p>
 <p>"I know, you want one of her smoke Persian kittens as a prospective wife for Wumples--or a husband, is it?" (Reginald has a magnificent scorn for details, other than sartorial.) "And I am expected to undergo social martyrdom to suit the connubial exigencies"--</p>
