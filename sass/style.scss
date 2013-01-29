@@ -1,0 +1,47 @@
+
+
+$break1: 300px;
+$break2: 450px;
+$break3: 700px;
+$break4: 1000px;
+$break5: 1250px;
+$break6: 1500px;
+
+$phi: 1.618;
+$phir: $phi - 1;
+
+$ruler0: $phir * 100%;   // 61.8%
+$ruler1: $ruler0 * $phir; // 38.2%
+$ruler2: $ruler1 * $phir; // 23.6%
+$ruler3: $ruler2 * $phir; // 14.6%
+$ruler4: $ruler3 * $phir; // 9.0%
+$ruler5: $ruler4 * $phir; // 5.6%
+$ruler6: $ruler5 * $phir; // 3.4%
+
+
+body {
+  font-family: "chaparral-pro";
+  font-size: 1em;
+  @media all and (min-width:$break3) {
+    font-size: 1.1em;
+  }
+
+}
+
+#main {
+  padding:1em $ruler5 2em $ruler6;
+  
+  @media all and (min-width:$break1) {
+    padding:1em $ruler4 2em $ruler5;
+  }
+  @media all and (min-width:$break3) {
+    padding:1em $ruler3 2em $ruler4;
+  }
+  @media all and (min-width:$break5) {
+    padding:1em $ruler2 2em $ruler3;
+  }
+}
+
+p.hanging {
+  text-indent: -.3em;
+}

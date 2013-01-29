@@ -1,0 +1,21 @@
+body {
+  font-family: "chaparral-pro";
+  font-size: 1em; }
+  @media all and (min-width: 700px) {
+    body {
+      font-size: 1.1em; } }
+
+#main {
+  padding: 1em 5.57097% 2em 3.44286%; }
+  @media all and (min-width: 300px) {
+    #main {
+      padding: 1em 9.01452% 2em 5.57097%; } }
+  @media all and (min-width: 700px) {
+    #main {
+      padding: 1em 14.58659% 2em 9.01452%; } }
+  @media all and (min-width: 1250px) {
+    #main {
+      padding: 1em 23.6029% 2em 14.58659%; } }
+
+p.hanging {
+  text-indent: -.3em; }
