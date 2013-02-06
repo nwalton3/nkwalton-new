@@ -4,11 +4,16 @@
 $line-height: 1.4 !default;
 $font-color: #210 !default;
 
-$link-color: #00e !default;
-$link-hover-color: #06e !default;
-$link-visited-color: #551a8b !default;
+$link-color: #b10 !default;
+$link-hover-color: #c10 !default;
+$link-visited-color: #810 !default;
 
 $selected-font-color: #000 !default;
 $selected-background-color: #ffa !default;
 
 $invalid-background-color: #f0dddd !default;
+
+
+body {
+  background-color: #ffe;
+}

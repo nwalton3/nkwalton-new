@@ -1,7 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: .8125em;
-  background-color: #fff3ee; }
+  font-size: .8125em; }
   @media all and (min-width: 200px) {
     body {
       font-size: .9375em;
@@ -41,10 +40,26 @@ body {
       padding: 1em 23.6029% 2em 14.58659%; } }
   @media all and (min-width: 450px) {
     #main .article {
-      text-shadow: 0 1px white; } }
+      text-shadow: 0 1px 0 white; } }
   @media all and (min-width: 1450px) {
     #main .article {
       width: 42em; } }
 
 p.hanging {
   text-indent: -.3em; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    border-bottom: 1px dotted; }
+
+blockquote {
+  text-indent: -.5em; }
+  blockquote:before, blockquote:after {
+    font-size: 1.3em;
+    line-height: .9;
+    opacity: .8; }
+  blockquote:before {
+    content: "“"; }
+  blockquote:after {
+    content: "”"; }

@@ -15,7 +15,7 @@
 <body>
   <div id="container">
     <header></header>
-    <div id="main" role="main"><?php include('articles/reginald.php'); ?></div>
+    <div id="main" role="main"><?php include('articles/email.php'); ?></div>
     <footer></footer>
   </div>
   <script src="js/jquery.min.js"></script>
