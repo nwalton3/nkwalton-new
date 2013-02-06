@@ -1,6 +1,6 @@
 <div class="article md">
 
-# Protecting Email Addresses
+# Protecting Email Addresses #
 
 Email has been around for over 40 years in one form or another. Spam has been with us for almost that long. In 2009, Microsoft estimated that [over 97% of email messages were spam](http://news.bbc.co.uk/2/hi/technology/7988579.stm). It's kind of hard to ignore that.
 
@@ -8,7 +8,8 @@ There are a lot of smart people working hard to stop the spam that gets sent fro
 
 Here's a run-down of the relevant options:
 
-## _Option 1:_ Do nothing
+## _Option 1:_ Do nothing #
+
 One author votes that we [stop obfuscating email](http://jasonpriem.org/2009/05/stop-obfuscating-email/) altogether, suggesting: "Spam is a problem for you–obfuscation makes it a problem for your users."
 
 It's an interesting argument for the sake of argument, but I think it's kind of stupid in practice. I'd rather not put my email address out there for spammers to harvest, no matter what theoretical argument there may be in support of that.
@@ -17,8 +18,10 @@ Some have suggested that [Gmail's](http://www.gmail.com) filter is good enough t
 
 I don't think I'll jump in the shark tank just because I've got some decent shark repellent.
 
+Verdict: *bad idea*
 
-## _Option 2:_ Obfuscation
+
+## _Option 2:_ Obfuscation #
 
 Obfuscation is a technique of scrambling or hiding an email address from email-harvesting robots while still (hopefully) keeping it accessible to legitimate users.
 
@@ -27,7 +30,7 @@ Aside from the fact that [some of these obfuscators look like spam sites themsel
 In other words, it's better than nothing (often a LOT better), but it's not a failsafe.
 
 
-### Images
+### Images #
 
 Since spam bots usually parse HTML text, displaying an email address as an image should circumvent that. It also frustrates users, especially those who use a screen reader or otherwise rely on the text content of a page. 
 
@@ -35,12 +38,15 @@ Additionally, any spammer with OCR software could potentially still extract the 
 
 Images are not a great approach.
 
-### Simple Text Munging
+Verdict: *bad idea*
+
+### Simple Text Munging #
 
 email [at] address [dot] com
 
 
-### HTML
+### HTML #
+
 http://www.albionresearch.com/misc/obfuscator.php
 
 http://www.wbwip.com/wbw/emailencoder.html
@@ -48,7 +54,7 @@ http://www.wbwip.com/wbw/emailencoder.html
 <blockquote>This technique is not by any means a foolproof solution&mdash;high end software &hellip; can still sniff out your email address regardless. But this technique will still certainly go a long way towards minimizing your exposure to less capable automated email harvesters.</blockquote>
 
 
-### Javascript
+### Javascript #
 
 <pre><code>
 &lt;script type="text/javascript"&gt;
@@ -63,17 +69,17 @@ http://www.wbwip.com/wbw/emailencoder.html
 http://www.spamspan.com/
 
 
-### Combination of the above (Apache, PHP, Javascript)
+### Combination of the above (Apache, PHP, Javascript) #
 
 http://alistapart.com/article/gracefulemailobfuscation
 
 
 
-##Contact form
+##Contact form #
 
 
 
-##Authentication
+##Authentication #
 
 - http://en.wikipedia.org/wiki/Email
 - http://en.wikipedia.org/wiki/Email_spam
