@@ -1,3 +1,12 @@
+/*
+Theme Name:     nkwalton
+Theme URI:      
+Description:    Custom theme for nkwalton.com 
+Author:         Nathan Walton
+Author URI:     http://nkwalton.com/
+Template:       Starkers HTML5
+Version:        0.1.0
+*/
 body {
   font-family: sans-serif;
   font-size: .8125em; }
@@ -45,6 +54,9 @@ body {
     #main .article {
       width: 42em; } }
 
+article h1 {
+  font-size: 2em; }
+
 p.hanging {
   text-indent: -.3em; }
 
@@ -63,3 +75,9 @@ blockquote {
     content: "“"; }
   blockquote:after {
     content: "”"; }
+
+#main aside, footer, .postInfo {
+  display: none; }
+
+code {
+  font-size: .8em; }

@@ -1,3 +1,15 @@
+/*
+Theme Name:     nkwalton
+Theme URI:      
+Description:    Custom theme for nkwalton.com 
+Author:         Nathan Walton
+Author URI:     http://nkwalton.com/
+Template:       Starkers HTML5
+Version:        0.1.0
+*/
+
+
+
 @import 'compass';
 
 
@@ -6,7 +18,7 @@
 $phi: 1.618;
 $phi-ratio: $phi - 1;
 
-$ruler0: $phi-ratio * 100%;   // 61.8%
+$ruler0: $phi-ratio * 100%;    // 61.8%
 $ruler1: $ruler0 * $phi-ratio; // 38.2%
 $ruler2: $ruler1 * $phi-ratio; // 23.6%
 $ruler3: $ruler2 * $phi-ratio; // 14.6%
@@ -14,7 +26,7 @@ $ruler4: $ruler3 * $phi-ratio; // 9.0%
 $ruler5: $ruler4 * $phi-ratio; // 5.6%
 $ruler6: $ruler5 * $phi-ratio; // 3.4%
 
-$ruler2-1: $ruler2 - $ruler5; // 18%
+$ruler2-1: $ruler2 - $ruler5;  // 18%
 $ruler2-2: $ruler2-1 * $phi-ratio; // 11.124%
 
 
@@ -66,6 +78,12 @@ body {
 }
 
 
+article {
+  h1 {
+    font-size: 2em;
+  }
+}
+
 p.hanging {
   text-indent: -.3em;
 }
@@ -92,3 +110,10 @@ blockquote {
   }
 }
 
+#main aside, footer, .postInfo {
+  display: none;
+}
+
+code  {
+  font-size: .8em;
+}
