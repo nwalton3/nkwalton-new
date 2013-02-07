@@ -1,6 +1,6 @@
 <div class="article md">
 
-# Learn To Design for Web #
+# Think Like a Web Designer #
 ## A Resource Guide for Print Designers #
 
 Web design is to print design as rugby is to american football.
@@ -9,7 +9,7 @@ If you've learned one sport you have some of the fundamentals for the other, but
 
 The same goes for web design: you've got to get in the right mindset.
 
-In that spirit, here are some resources that will help you think like a web designer. I've found that it's kind of difficult to switch frequently, so if you're looking to master web you should invest a good amount of time in a continuous block if you can.
+In that spirit, here are some resources that will help you think like a web designer. I've found that it's kind of difficult to switch frequently, so if you're looking to master web design you should invest some good chunks of time if you can.
 
 #### The place to start: #
 
