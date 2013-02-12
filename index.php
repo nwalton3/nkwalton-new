@@ -15,7 +15,7 @@
 <body>
   <div id="container">
     <header></header>
-    <div id="main" role="main"><?php include('articles/print-to-web.md'); ?></div>
+    <div id="main" role="main"><?php include('articles/email.md'); ?></div>
     <footer></footer>
   </div>
   <script src="js/jquery.min.js"></script>
